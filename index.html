@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>مغامرة الأبطال - التسجيل</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="reg-page">
+    <div class="reg-card">
+      <div class="eyebrow">مدرسة الكتاب المقدس</div>
+      <h1 class="title-font">مغامرة الأبطال</h1>
+      <p class="reg-sub">سجّل اسمك وابدأ المغامرة</p>
+
+      <form id="regForm">
+        <div class="field">
+          <label for="nameInput">الاسم</label>
+          <input type="text" id="nameInput" placeholder="اكتب الاسم هنا " required autocomplete="off">
+        </div>
+
+        <div class="field">
+          <label for="stageSelect">الفرقة</label>
+          <select id="stageSelect" required>
+            <option value="" disabled selected>اختر الفرقة</option>
+            <option value="1ب">1ب</option>
+            <option value="2ب">2ب</option>
+            <option value="3ب">3ب</option>
+            <option value="4ب">4ب</option>
+            <option value="5ب">5ب</option>
+            <option value="6ب">6ب</option>
+          </select>
+        </div>
+
+        <button type="submit" class="submit-btn" id="submitBtn">انضم للمغامرة</button>
+        <div class="form-msg" id="formMsg"></div>
+      </form>
+
+      <a href="results.html" class="reg-footer-link">عرض قائمة المشاركين ←</a>
+    </div>
+  </div>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
