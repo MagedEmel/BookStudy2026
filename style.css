@@ -44,6 +44,7 @@ body {
     radial-gradient(ellipse at 50% -10%, #2a466f 0%, var(--night) 55%),
     var(--night);
   position: relative;
+  flex-direction: column;
   overflow: hidden;
 }
 
@@ -503,4 +504,13 @@ body {
     font-size: 25px;
     font-weight: bold;
   }
+}
+footer{
+  text-align: center;
+}
+footer h3{
+  color:#2a466f;
+}
+footer h3 span{
+  color: #6b4226
 }

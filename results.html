@@ -1,47 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ar" dir="rtl">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>مغامرة الأبطال - قائمة المشاركين</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="results-page">
-    <div class="results-header">
-      <h1 class="title-font">قائمة الأبطال</h1>
-      <p>الترتيب حسب وقت التسجيل</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>مغامرة الأبطال - قائمة المشاركين</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="results-page">
+      <div class="results-header">
+        <h1 class="title-font">قائمة الأبطال</h1>
+        <p>الترتيب حسب وقت التسجيل</p>
 
-      <div class="filter-field">
-        <select id="stageFilter">
-          <option value="all">كل الفرق</option>
-          <option value="1ب">1ب</option>
-          <option value="2ب">2ب</option>
-          <option value="3ب">3ب</option>
-          <option value="4ب">4ب</option>
-          <option value="5ب">5ب</option>
-          <option value="6ب">6ب</option>
-        </select>
+        <div class="filter-field">
+          <select id="stageFilter">
+            <option value="all">كل الفرق</option>
+            <option value="1ب">1ب</option>
+            <option value="2ب">2ب</option>
+            <option value="3ب">3ب</option>
+            <option value="4ب">4ب</option>
+            <option value="5ب">5ب</option>
+            <option value="6ب">6ب</option>
+          </select>
+        </div>
       </div>
-    </div>
 
-    <div class="list-wrap">
-      <ul id="list"></ul>
-      <div class="empty-state" id="emptyState">لسه محدش سجّل 👀</div>
-    </div>
-  </div>
-
-  <div class="modal-overlay" id="confirmModal">
-    <div class="modal-box">
-      <h3>تأكيد الحذف</h3>
-      <p>انت متأكد إنك عايز تمسح <strong id="modalName"></strong>؟</p>
-      <div class="modal-actions">
-        <button class="btn-cancel" id="cancelDelete">إلغاء</button>
-        <button class="btn-confirm" id="confirmDelete">مسح</button>
+      <div class="list-wrap">
+        <ul id="list"></ul>
+        <div class="empty-state" id="emptyState">لسه محدش سجّل 👀</div>
       </div>
+      <footer>
+        <h3>Made With <span>Maged Emel</span></h3>
+      </footer>
     </div>
-  </div>
 
-  <script type="module" src="results.js"></script>
-</body>
+    <div class="modal-overlay" id="confirmModal">
+      <div class="modal-box">
+        <h3>تأكيد الحذف</h3>
+        <p>انت متأكد إنك عايز تمسح <strong id="modalName"></strong>؟</p>
+        <div class="modal-actions">
+          <button class="btn-cancel" id="cancelDelete">إلغاء</button>
+          <button class="btn-confirm" id="confirmDelete">مسح</button>
+        </div>
+      </div>
+      <footer></footer>
+    </div>
+
+    <script type="module" src="results.js"></script>
+  </body>
 </html>
